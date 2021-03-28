@@ -1,0 +1,109 @@
+
+:root{
+    --amarillo: #eac458;
+    --mostaza: #7c641c;
+    --marron:#734515;
+    --gris:#bababa;
+}
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+body{
+    border: black solid 1px;
+}
+.contenedor{
+    display:flex;
+    padding: 1rem 3rem;
+    border-bottom: black solid 1px;
+}
+.navegacion-menu{
+    flex-grow: 1;
+}
+.boton-menu{
+    flex-grow: .01;
+    background-color: var(--amarillo);
+    width:10rem; 
+    height:4rem;
+    align-self: center;
+    justify-self: center;
+    border: black solid 1px;
+}
+.menu{
+    list-style: none;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 2rem;
+    font-size: 2rem;
+    padding-right: 5rem;
+}
+.link-menu{
+    text-decoration: none;
+    color:black;
+}
+.cont-principal .cont-secundario{
+    display: flex;
+    flex-direction: column;
+}
+.hero{
+    background-color: var(--mostaza);
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: black solid 1px;
+    margin-bottom: 2rem;
+}
+.bloques{
+    margin:2rem;
+    display:flex;
+    gap: 2rem;
+    flex-direction: row; 
+}
+.bloque{
+    border: black solid 1px;
+    text-align: center;
+    justify-content: center;
+    height: 20rem;
+    display:flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+}
+.cont-secundario .bloques{
+    background-color: var(--gris);
+}
+.cont-principal .bloque{
+    background-color: var(--marron);
+    flex-grow: 1;
+}
+.cont-secundario .bloque{
+    margin:2rem;
+    background-color: white;
+    flex-grow: 1;
+}
+.cont-secundario .titulo{
+    margin:2rem;
+    background-color: var(--mostaza);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+}
+
+@media(max-width:768px){
+
+    .contenedor, .menu{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .bloques{
+        flex-direction: column;
+    }
+    .cont-secundario .bloques, .cont-secundario .titulo{
+        margin: 2rem 0;
+    }
+}
