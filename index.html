@@ -20,21 +20,40 @@
             </nav>
         </div>
     </header>
-    <div class="cont-principal">
-        <img alt="Hero" class="hero">
-        <div class="bloques">
-            <div class="bloque">Block 1</div>
-            <div class="bloque">Block 2</div>
-            <div class="bloque">Block 3</div>
-        </div>
-    </div>
-    <div class="cont-secundario">
-        <span class="titulo">Tittle 2</span>
-        <div class="bloques">
-            <div class="bloque">Block 1</div>
-            <div class="bloque">Block 1</div>
-        </div>
-    </div>
-    
+    <article>
+        <section class="cont-principal">
+            <img alt="Hero" class="hero">
+            <div class="bloques">
+                <div class="bloque">Block 1</div>
+                <div class="bloque">Block 2</div>
+                <div class="bloque">Block 3</div>
+            </div>
+        </section>
+        <section class="cont-secundario">
+            <span class="titulo">Tittle 2</span>
+            <div class="bloques">
+                <div class="bloque">
+                    <form action="#" class=formulario>
+                        <h2 class="titulo">CONTACTO</h2>
+                        <input class="formulario-input" type="text" name="nombre" placeholder="Nombre" >
+                        <input class="formulario-input" type="text" name="apellido" placeholder="Apellido" >
+                        <input class="formulario-input" type="email" name="email" placeholder="Correo" >
+                        <input class="formulario-input" type="number" name="telefono" placeholder="Telefono">
+                        <input type="button" value="Enviar" id="boton">
+                    </form>
+                </div>
+                <div class="bloque">
+                    <div class="contenedor">
+                        <h2 class="titulo">INFORMACION</h2>
+                        <span class="contenido">Nombre: </span>
+                        <span class="contenido">Apellido: </span>
+                        <span class="contenido">Email: </span>
+                        <span class="contenido">Telefono: </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </article>
+    <script src="script.js"></script>
 </body>
 </html>
